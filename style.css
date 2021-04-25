@@ -1,0 +1,434 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@200&display=swap');
+#logo {
+    width:190px ;
+    height: 90 px;
+}
+header {
+    display:flex;
+    justify-content: space-around; 
+    align-items: center;
+    position:fixed;
+    width:100%;
+    background:white;
+    top:0;
+}
+.menu {
+    display:flex;
+}
+.menu-item ,
+.menu-item 
+{
+    list-style: none;
+    margin-right: 20px;
+    cursor: pointer;
+    font-family:Roboto,Arial,sans-serif;
+    font-size:15px;
+    font-weight:400;
+    line-height:30px;
+    color: gray;
+    
+} 
+.drop-menu-item {
+    list-style:none;
+    margin-top:10px;
+    color:grey;
+    font-family:Roboto,Arial,sans-serif;
+    font-size:15px;
+    font-weight:400;
+    line-height:18px;
+}
+.drop-menu{
+    display:none;
+    
+}
+.menu-item:hover .drop-menu {
+    display:flex;
+    flex-direction:column;
+    position:absolute;
+    margin-left:-40px;
+}
+.menu-item:hover,
+li.active{
+    color:rgb(0,179,155);
+}
+.title{
+    text-align:center;
+    padding-top: 90px;
+}
+.title h1{
+    font-family: "Work Sans", Arial, sans-serif;
+    font-size: 34px;
+    font-weight: 300;
+    line-height: 44.2px;
+    color: rgb(0, 179, 155);
+}
+
+.info {
+    display:flex;
+    justify-content: space-around;
+    width:70%;
+    margin: auto;
+}
+.info p{
+    width:40%;
+    font:400 16px Roboto,Arial,sans-serif;
+    line-height:28px;
+    color:rgb(116,116,116);
+    margin-left:30px;
+}
+.categorie{
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    margin: auto;
+}
+.patients h1{
+    font:400 26px "Work Sans",Arial,sans-serif;
+    line-height: 33.8px;
+    color:rgb(255,255,255);
+    width: 70%;
+    margin: auto;
+}
+.doctors h1{
+    font:400 26px "Work Sans",Arial,sans-serif;
+    line-height: 33.8px;
+    color:rgb(255,255,255);
+    width: 70%;
+    margin: auto;
+}
+.clinics h1{
+    font:400 26px "Work Sans",Arial,sans-serif;
+    line-height: 33.8px;
+    color:rgb(255,255,255);
+    width: 70%;
+    margin: auto;
+}
+.patients p{
+    font:300 24px "Work Sans",Arial,sans-serif;
+    line-height: 28.8px;
+    color:rgb(255,255,255); 
+    width: 70%;
+    margin: auto;
+}
+.doctors p{
+    font:300 24px "Work Sans",Arial,sans-serif;
+    line-height: 28.8px;
+    color:rgb(255,255,255); 
+    width: 70%;
+    margin: auto;
+}
+.clinics p{
+    font:300 24px "Work Sans",Arial,sans-serif;
+    line-height: 28.8px;
+    color:rgb(255,255,255); 
+    width: 70%;
+    margin: auto;
+}
+.patients{
+    border-radius: 10px;
+    background:rgb(25,209,184);
+    /* display:inline-block; */
+    width:300px;
+    height:300px;
+    margin: 60px 8px;
+    border:none;
+}
+.doctors{
+    border-radius: 10px;
+    background:rgb(80,143,226);
+    /* display:inline-block; */
+    width:300px;
+    height:300px;
+    margin: 60px 8px;
+    border:none;
+}
+.clinics{
+    border-radius:10px;
+    background:rgb(50,60,72);
+    /* display: inline-block; */
+    width:320px;
+    height:300px;
+    margin: 60px 8px;
+    border: none;
+}
+#pat{
+    margin:15%;
+    text-decoration:underline;
+    background:rgb(25,209,184);
+    border:none;
+    font:400 19.2px Roboto,Arial,sans-serif;
+    line-height:28.8px;
+    color:rgb(255,255,255);
+    margin-bottom: 20px;
+}
+#doc{
+    margin:15%;
+    text-decoration: underline;
+    background: rgb(80,143,226);
+    border:none;
+    font:400 19.2px Roboto,Arial,sans-serif;
+    line-height:24.96px;
+    color:rgb(255,255,255);
+}
+#more{
+    margin:15%;
+    text-decoration: underline;
+    background: rgb(50,60,72);
+    border:none;
+    font:400 19.2px Roboto,Arial,sans-serif;
+    line-height:24.96px;
+    color:rgb(255,255,255);
+    margin-top:20px;   
+}
+#cli{
+    text-decoration: underline;
+    background:rgb(50,60,72);
+    border:none;
+    padding-left: 40px;
+    margin-top:20px;
+    font:400 19.2px Roboto,Arial,sans-serif;
+    line-height:24.96px;
+    color:rgb(255,255,255);
+}
+option{
+    /*background-color: white;
+    color:black;*/
+    cursor:pointor;
+}
+div{
+    /* padding-top: 10%; */
+    justify-content: justify;
+}
+#pat,
+#doc,
+#cli,
+#more{
+    cursor: pointer;
+}
+.campagny {
+    display:flex;
+    justify-content:space-around ;
+    width:70%;
+    margin:auto;
+}
+.campagny li{
+    list-style: none;
+    display:inline-block;
+    flex-direction: column;
+}
+
+.campagny h1{
+    font:300 26px "Work Sans",Arial,sans-serif;
+    line-height:33.8px;
+    color:rgb(0,179,155);
+}
+#logo1,
+#logo2,
+#logo3,
+#logo4,
+#logo5{
+    width:100px;
+    height:40px;
+}
+.platform {
+    display:flex;
+    justify-content: space-around;
+    background-color: rgb(212,245,245);
+    margin-top: 20px;
+}
+.nb{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 500px;
+}
+
+.description h1{
+    font:300 34px "Work Sans",Arial,Sans-serif;
+    line-height:44.2px;
+    color:rgb(0,179,155);
+}
+.description p{
+    font:400 14px Roboto,Arial,sans-serif;
+    line-height:24px;
+    color:rgb(116,116,116);
+}
+.nb-country h1{
+    font:300 24px "Work Sans",Arial,sans-serif;
+    line-height: 31.2px;
+    color:rgb(0, 179, 155);
+    width:70%;
+    margin:auto;
+}
+.nb-appointment h1{
+    font:300 24px "Work Sans",Arial,sans-serif;
+    line-height: 31.2px;
+    color:rgb(0, 179, 155);
+    width:70%;
+    margin:auto;
+}
+.nb-patient h1{
+    font:300 24px "Work Sans",Arial,sans-serif;
+    line-height: 31.2px;
+    color:rgb(0, 179, 155);
+    width:70%;
+    margin:auto;
+}
+.active-doctor h1{
+    font:300 24px "Work Sans",Arial,sans-serif;
+    line-height: 31.2px;
+    color:rgb(0, 179, 155);
+    width:70%;
+    margin:auto;
+}
+.nb-country p{
+    font:400 13px Roboto,Arial,sans-serif;
+    line-height: 16.9px;
+    color:rgb(116,116,116);
+    width:70%;
+    margin:auto;
+}
+.nb-appointment p{
+    font:400 13px Roboto,Arial,sans-serif;
+    line-height: 16.9px;
+    color:rgb(116,116,116);
+    width:70%;
+    margin:auto;
+}
+.nb-patient p{
+    font:400 13px Roboto,Arial,sans-serif;
+    line-height: 16.9px;
+    color:rgb(116,116,116);
+    width:70%;
+    margin:auto;
+}
+.active-doctor p{
+    font:400 13px Roboto,Arial,sans-serif;
+    line-height: 16.9px;
+    color:rgb(116,116,116);
+    width:70%;
+    margin:auto;
+}
+.nb-country,
+.nb-appointment,
+.nb-patient,
+.active-doctor{
+    border-radius:5px;
+    width:200px;
+    height:170px;
+    margin:10px;
+    background:white;
+    padding-top:10%;
+    justify-content: justify;
+}
+.nb-country{
+    margin-top: 60px;
+}
+.nb-appointment{
+    margin-top: 30px;
+}
+.office h1{
+    font:300 30px "Work Sans",Arial,sans-serif;
+    line-height: 39px;
+    color:rgb(0,179,155);
+    text-align:center;
+}
+.office p{
+    font:400 14px Roboto,Arial,sans-serif;
+    line-height: 24px;
+    color:rgb(116,116,116);
+    text-align:center;
+}
+
+.opinion h1{
+    font:300 30px "Work Sans",Arial,sans-serif;
+    line-height: 30px;
+    color: rgb(51,51,51);
+    text-align:center;
+}
+input[value^="SEE ALL CURRENT OPENINGS"]{
+    font:700 12px Roboto,Arial,sans-serif;
+    line-height: 12px;
+    color:rgb(255,255,255);
+    background-color: rgb(22,98,198);
+    border-radius: 5px;
+    width:200px;
+    height:50px;
+    border:none;
+    cursor:pointer;
+    display:block;
+    margin:auto;
+}
+
+.foot{
+    font:400 12px Roboto,Arial,sans-serif;
+    line-height: 15.6px;
+    color:rgb(171,171,171);
+    text-align:center;
+    border-top:solid 1px rgb(171,171,171);
+    margin-top:20px;
+}
+.p1,
+.li{
+    display:inline-block;
+}
+li{
+    display: inline-block;
+    list-style: none;
+    color:rgb(80,143,226);
+}
+li:hover{
+    color:rgb(52,125,222);
+    text-decoration:underline;
+    cursor: pointer;
+    
+}
+.bureau {
+    display: flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+input[value^="SEE OPENING"]{ 
+    font:700 10px Roboto,Arial,Sans-serif;
+    line-height: 10px;
+    color:rgb(255,255,255);
+    background-color: rgb(22,98,198);
+    width: 100px;
+    height:30px;
+    border:none;
+}
+input[type^="text"]{
+    font:400 18px Roboto,Arial,Sans-serif;
+    line-height: 30px;
+    color:rgb(116,116,116);
+    border:none;
+    background-color:rgb(255,255,255);
+}
+label{
+    display: block;
+}
+.bureau div:hover{
+    box-shadow: 0px 0px 15px #888888;
+    /* margin-top: 0; */
+    /* padding-top: 0; */
+}
+.final:hover{
+    box-shadow: 0px 0px 15px #888888;
+}
+.bureau div{
+    margin-bottom: 30px;
+}
+.final{
+    margin-left: 10%;
+    width:26%;
+}
+.button:hover{
+    color: rgb(22,98,198);
+    background-color:blue;
+    cursor:pointer;
+}
